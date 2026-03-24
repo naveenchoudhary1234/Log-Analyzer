@@ -1,0 +1,14 @@
+[package]
+name = "log-analyzer"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "log-analyzer"
+path = "src/main.rs"
+
+[dependencies]
+thiserror = "1.0"
+
+[dev-dependencies]
+tempfile = "3"
