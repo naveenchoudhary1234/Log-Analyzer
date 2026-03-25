@@ -13,7 +13,6 @@ pub struct LogEntry {
     pub source_file: PathBuf,
 }
 
-
 /// Format: "YYYY-MM-DD HH:MM:SS [LEVEL] component: message"
 pub fn parse_log_line(
     line: &str,
@@ -33,7 +32,6 @@ pub fn parse_log_line(
         return Err(make_err("Empty line"));
     }
 
-    
     if line.len() < 19 {
         return Err(make_err("Line too short to contain a timestamp"));
     }
@@ -45,7 +43,6 @@ pub fn parse_log_line(
 
     let rest = line[19..].trim_start();
 
-    
     if !rest.starts_with('[') {
         return Err(make_err("Expected '[' after timestamp for log level"));
     }
@@ -61,7 +58,6 @@ pub fn parse_log_line(
 
     let rest = rest[close_bracket + 1..].trim_start();
 
-    
     let colon_pos = rest
         .find(':')
         .ok_or_else(|| make_err("Missing ':' separator between component and message"))?;
