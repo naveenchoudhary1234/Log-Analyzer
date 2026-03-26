@@ -1,0 +1,5 @@
+2024-01-15 10:23:45 [ERROR] storage: Failed to mount filesystem
+2024-01-15 10:23:46 [INFO]  network: Connection established
+2024-01-15 10:23:47 [WARN]  auth: Multiple failed login attempts
+2024-01-15 10:24:01 [DEBUG] scheduler: Task queue processing
+2024-01-15 10:24:05 [FATAL] kernel: Out of memory
