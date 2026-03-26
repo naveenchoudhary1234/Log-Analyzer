@@ -1,0 +1,5 @@
+2024-01-15 10:00:00 [INFO] app: Application started
+2024-01-15 10:00:01 [DEBUG] config: Loading configuration
+2024-01-15 10:00:02 [INFO] network: Listening on port 8080
+2024-01-15 10:00:05 [WARN] auth: Certificate expires in 7 days
+2024-01-15 10:00:10 [ERROR] storage: Disk usage above 90%
